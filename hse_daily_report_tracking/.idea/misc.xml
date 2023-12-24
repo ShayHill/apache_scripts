@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="enabledOnReformat" value="true" />
+    <option name="enabledOnSave" value="true" />
+    <option name="executionMode" value="BINARY" />
+    <option name="pathToExecutable" value="C:\Users\shaya\AppData\Local\Programs\Python\Python311\Scripts\black.exe" />
+    <option name="sdkUUID" value="cf6d5fcd-b8b6-4d7e-8796-35f7b6283dc8" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Poetry (hse_daily_report_tracking)" project-jdk-type="Python SDK" />
+</project>

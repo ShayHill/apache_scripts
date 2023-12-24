@@ -1,0 +1,63 @@
+{
+    "configurations": {
+        "main":{
+            "adapter": "debugpy",
+            "configuration": {
+                "name": "run the executable",
+                "type": "python",
+                "request": "launch",
+                "python.pythonPath": "./venv/Scripts/python.exe",
+                "python": ".\\venv\\Scripts\\python.exe",
+                "program": "${file}"
+            },
+            "breakpoints": {
+                "exception": {
+                  "raised": "N",
+                  "caught": "N",
+                  "uncaught": "Y",
+                  "userUnhandled": "N"
+                }
+            }
+        },
+
+    "<name>: Launch": {
+      "adapter": "debugpy",
+      "configuration": {
+        "name": "Python: Launch",
+        "type": "python",
+        "request": "launch",
+        "python": "%s",
+        "stopOnEntry": true,
+        "console": "externalTerminal",
+        "debugOptions": [],
+        "program": "${file}"
+      }
+    },
+
+
+        "test":{
+            "adapter": "debugpy",
+            "configuration": {
+                "name": "run the test",
+                "module": "pytest",
+                "type": "python",
+                "request": "launch",
+                "python.pythonPath": "./venv/Scripts/python.exe",
+                "args": [
+                  "-q",
+                  "${file}"
+                ]
+
+            },
+            "breakpoints": {
+                "exception": {
+                  "raised": "N",
+                  "caught": "N",
+                  "uncaught": "Y",
+                  "userUnhandled": "N"
+                }
+            }
+        }
+    }
+}
+

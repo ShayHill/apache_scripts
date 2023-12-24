@@ -1,0 +1,43 @@
+[project]
+name = "get_missing_blitz"
+version = "0.1.0"
+description = "Count who has done Blitz audits and who hasn't."
+authors = [{ name = "Shay Hill", email = "shay_public@hotmail.com" }]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["openpyxl"]
+
+[project.optional-dependencies]
+dev = ["commitizen", "pre-commit", "pytest", "types-openpyxl"]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+tag_format = "$version"
+major-version-zero = true
+version_files = ["pyproject.toml:^version"]
+
+[tool.pyright]
+include = ["src"]
+exclude = ["**/__pycache__.py"]
+
+pythonVersion = "3.11"
+pythonPlatform = "Any"
+
+typeCheckingMode = "strict"
+reportShadowedImports = true
+reportCallInDefaultInitializer = true
+reportImplicitStringConcatenation = true
+# reportMissingSuperCall = true
+reportPropertyTypeMismatch = true
+reportUninitializedInstanceVariable = true
+reportUnnecessaryTypeIgnoreComment = true
+reportUnusedCallResult = true
+
+venvPath = "."
+venv = "./venv"
